@@ -58,10 +58,10 @@ public class IndividualPane extends GridPane {
         // Get the path of the file that contains the image
         File avatar = new File(this.getClass().getResource("Whitnell_PP_avatar_small.png")
         .getPath());
-        System.out.println(avatar.toURI().toString());
+        System.out.println("file:" + avatar.getPath());
 
         // URI stands for Uniform Resource Identifier and it's similar to a URL
-        avatarView = new ImageView(avatar.toURI().toString());
+        avatarView = new ImageView("file:" + avatar.getPath());
 
         // instantiate textfield attributes
         nameField = new TextField();
