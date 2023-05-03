@@ -110,6 +110,8 @@ public class IndividualPane extends GridPane {
         // Instantiate the previous and next buttons
         previousButton = new Button("Previous");
         nextButton = new Button("Next");
+        nextButton.setDisable(false);
+        previousButton.setDisable(true);
 
         // Add a label to the pane
         this.add(nameLabel, 0, 0);
@@ -244,6 +246,8 @@ public class IndividualPane extends GridPane {
             nameField.setText(current.getName().toString());
             emailField.setText(current.getEmail());
             phoneField.setText(current.getPhone());
+            nextButton.setDisable(false);
+            previousButton.setDisable(true);
         });
 
         // Attach the listener to both the next and previous buttons
