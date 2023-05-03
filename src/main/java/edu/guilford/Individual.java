@@ -4,9 +4,9 @@ import java.util.Random;
 
 public class Individual implements Comparable<Individual> {
     // Three attributes for name, email, and phone
-    private FullName name;
-    private String email;
-    private String phone;
+    protected FullName name;
+    protected String email;
+    protected String phone;
     private Random rand = new Random();
 
     // Constructor that gives default data
