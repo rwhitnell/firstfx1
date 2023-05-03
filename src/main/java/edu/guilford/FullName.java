@@ -41,6 +41,10 @@ public class FullName implements Comparable<FullName> {
         return firstName;
     }
 
+    /** 
+     * @param firstName
+     * @return void
+     */
     public void setFirstName(String firstName) {
         // We can do some validation here to make sure that the first name
         // is not null or empty
@@ -53,6 +57,10 @@ public class FullName implements Comparable<FullName> {
         return lastName;
     }
 
+    
+    /** 
+     * @param lastName
+     */
     public void setLastName(String lastName) {
         // We can do some validation here to make sure that the last name
         // is not null or empty
@@ -61,6 +69,7 @@ public class FullName implements Comparable<FullName> {
         }
     }
 
+    @Override
     public String toString() {
         return firstName + " " + lastName;
     }
